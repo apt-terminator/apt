@@ -87,3 +87,19 @@ with torch.no_grad():
 # Use [CLS] token as sentence embedding (BERT-style)
 embedding = outputs.last_hidden_state[:, 0, :]  # Shape: [1, hidden_size]
 ```
+
+## 🛡️ MITRE ATT&CK Mapping
+
+To enhance interpretability and facilitate analyst trust, our framework integrates post hoc explainability via Large Language Models (LLMs), such as BERT and MiniLM. Each process is transformed into a behaviorally descriptive sentence and analyzed using LLM prompting to infer suspiciousness and align activities with known adversarial tactics.
+
+The generated explanations are automatically mapped to the [MITRE ATT&CK](https://attack.mitre.org/) framework, helping bridge low-level trace signals with high-level adversary behavior.
+
+| OS       | Behavior Summary                                                              | Mapped Tactics & Techniques                              | ATT&CK IDs                   |
+|----------|-------------------------------------------------------------------------------|----------------------------------------------------------|------------------------------|
+| **Linux**   | Opened file, executed binary, forked subprocess, renamed system file         | Masquerading, Process Injection, Shell Config Hijacking   | T1036.003, T1055, T1543.003  |
+| **Windows** | Modified registry, created process, connected to host, wrote to file         | Registry Run Keys, Command Interpreter, Tool Transfer     | T1547.001, T1059, T1105      |
+| **BSD**     | Changed file ownership and permissions before executing                     | Permission Modification, Sudo Abuse                       | T1222.002, T1548.001         |
+| **Android** | Installed APK, sent data, held wakelock                                     | Malicious App Delivery, Sensitive Data Access, Autostart  | T1476, T1409, T1547          |
+
+> 📌 These mappings are produced automatically from binary event vectors via sentence generation and LLM-based interpretation.
+
