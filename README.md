@@ -38,3 +38,6 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ![Cross-OS Multi-Path Detection Pipeline](https://github.com/apt-terminator/apt/blob/main/figures/figure1.png)
 
+![Alt text](https://github.com/flagus-apt/flagus/blob/main/figures/AL_Windows_Pandex.png "Active Learning Windows Pandex")
+
+
