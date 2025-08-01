@@ -12,7 +12,13 @@ We propose a novel unsupervised framework for detecting Advanced Persistent Thre
 - 🔹 **Path 3 — Geometric Scoring with Optimal Transport (OT):** Including variants such as classic, entropy-regularized, angular-based, and local density-based OT.
 
 Our final score is obtained via **max-fusion** across the three paths.
+![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/refs/heads/main/figures/figure1.png)
 ![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/main/figures/figure1.png)
+*Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
+
+![Cross-OS Multi-Path Detection Pipeline](https://github.com/apt-terminator/apt/blob/main/figures/figure1.png)
+
+![Alt text](https://github.com/flagus-apt/flagus/blob/main/figures/AL_Windows_Pandex.png "Active Learning Windows Pandex")
 
 
 ---
@@ -34,12 +40,5 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ## 📊 Method Overview
 
-![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/refs/heads/main/figures/figure1.png)
-![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/main/figures/figure1.png)
-*Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
-
-![Cross-OS Multi-Path Detection Pipeline](https://github.com/apt-terminator/apt/blob/main/figures/figure1.png)
-
-![Alt text](https://github.com/flagus-apt/flagus/blob/main/figures/AL_Windows_Pandex.png "Active Learning Windows Pandex")
 
 
