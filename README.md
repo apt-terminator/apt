@@ -28,3 +28,13 @@ Our final score is obtained via **max-fusion** across the three paths.
 ├── data/                       # Small toy example for demo (real data fetched separately)
 ├── README.md                   # You are here
 └── requirements.txt            # Required Python packages
+
+
+## 📊 Method Overview
+
+![Cross-OS Multi-Path Detection Pipeline](figures/Screenshot 2025-08-01 at 15.25.03.png)
+
+*Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
+
+![Cross-OS Multi-Path Detection Pipeline](figures/Screenshot 2025-08-01 at 15.25.12.png)
+
