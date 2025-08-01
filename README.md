@@ -12,6 +12,8 @@ We propose a novel unsupervised framework for detecting Advanced Persistent Thre
 - 🔹 **Path 3 — Geometric Scoring with Optimal Transport (OT):** Including variants such as classic, entropy-regularized, angular-based, and local density-based OT.
 
 Our final score is obtained via **max-fusion** across the three paths.
+![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/main/figures/figure1.png)
+
 
 ---
 
