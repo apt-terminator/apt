@@ -32,9 +32,9 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ## 📊 Method Overview
 
-![Cross-OS Multi-Path Detection Pipeline](figures/Screenshot 2025-08-01 at 15.25.03.png)
+![Cross-OS Multi-Path Detection Pipeline](figures/figure1.png)
 
 *Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
 
-![Cross-OS Multi-Path Detection Pipeline](figures/Screenshot 2025-08-01 at 15.25.12.png)
+![Cross-OS Multi-Path Detection Pipeline](figures/figure2.png)
 
