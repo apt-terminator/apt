@@ -15,12 +15,11 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/refs/heads/main/figures/figure1.png)
 
-![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/main/figures/figure1.png)
 
-*Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
 
 ![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/refs/heads/main/figures/figure2.png)
 
+*Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
 
 
 ---
