@@ -32,7 +32,7 @@ Our final score is obtained via **max-fusion** across the three paths.
 └── requirements.txt            # Required Python packages
 
 
-## 📊 Method Overview
+```
 
 
 ## Requirements
