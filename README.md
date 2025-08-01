@@ -60,7 +60,8 @@ You can install all dependencies using:
 pip install -r requirements.txt
 ```
 
-##LLM embeddings
+## LLM embeddings
+The following code example demonstrates how to generate contextualized sentence embeddings using a pre-trained Transformer model from the Hugging Face transformers library. It begins by selecting a model architecture (e.g., BERT, DistilBERT, or MiniLM), then loads the corresponding tokenizer and model weights. Given a sample sentence describing system behavior, the code tokenizes the input, feeds it through the model, and extracts the embedding associated with the [CLS] token — commonly used as a summary representation of the entire sentence in models like BERT. This embedding can be further used in downstream tasks such as semantic similarity, anomaly scoring, or classification.
 
 ```python
 from transformers import AutoTokenizer, AutoModel
