@@ -58,4 +58,31 @@ You can install all dependencies using:
 
 ```bash
 pip install -r requirements.txt
+```
 
+##LLM embeddings
+
+```python
+from transformers import AutoTokenizer, AutoModel
+import torch
+
+# Choose your model
+model_name = 'bert-base-uncased'  # options: 'distilbert-base-uncased', 'microsoft/MiniLM-L6-v2', etc.
+
+# Load model and tokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name)
+
+# Example sentence
+sentence = "The process opened a file, connected to a remote host, and executed a binary."
+
+# Tokenize input
+inputs = tokenizer(sentence, return_tensors="pt", truncation=True, padding=True)
+
+# Generate embeddings
+with torch.no_grad():
+    outputs = model(**inputs)
+
+# Use [CLS] token as sentence embedding (BERT-style)
+embedding = outputs.last_hidden_state[:, 0, :]  # Shape: [1, hidden_size]
+```
