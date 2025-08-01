@@ -1,1 +1,29 @@
+# Core Libraries
+numpy>=1.21
+pandas>=1.3
+scikit-learn>=1.1
+scipy>=1.7
+
+# PyTorch and GNNs
+torch>=1.12
+torch_geometric>=2.1
+torch_sparse>=0.6
+torch_scatter>=2.0
+
+# Transformers & LLM Embeddings
+transformers>=4.25
+sentence-transformers>=2.2
+
+# Optimal Transport
+POT>=0.8.2
+
+# Visualization (Optional but Recommended)
+matplotlib>=3.5
+seaborn>=0.11
+
+# Reproducibility and Progress
+tqdm>=4.62
+
+# Optional: for typing/debugging
+rich>=12.0
 
