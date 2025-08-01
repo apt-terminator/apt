@@ -19,7 +19,6 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/refs/heads/main/figures/figure2.png)
 
-s
 
 ---
 
@@ -36,4 +35,22 @@ s
 ## 📊 Method Overview
 
 
+## Requirements
+
+To run this project, make sure you have the following dependencies installed:
+
+- Python 3.8+
+- PyTorch >= 1.12
+- NumPy
+- pandas
+- scikit-learn
+- torch-geometric
+- matplotlib
+- transformers
+- networkx
+
+You can install all dependencies using:
+
+```bash
+pip install -r requirements.txt
 
