@@ -19,8 +19,7 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ![Cross-OS Multi-Path Detection Pipeline](https://raw.githubusercontent.com/apt-terminator/apt/refs/heads/main/figures/figure2.png)
 
-*Figure 1: Overview of our cross-OS multi-path anomaly detection pipeline combining semantic similarity, structural modeling, and optimal transport scoring.*
-
+s
 
 ---
 
@@ -28,11 +27,6 @@ Our final score is obtained via **max-fusion** across the three paths.
 
 ```bash
 ├── src/                        # Core implementation
-│   ├── embeddings/             # LLM sentence encoder functions
-│   ├── graphs/                 # VGAE graph construction and training
-│   ├── ot/                     # Optimal Transport scoring variants
-│   └── utils/                  # Data loaders, sentence construction, evaluation metrics
-├── experiments/                # Reproducibility scripts for Attack Scenarios 1 & 2
 ├── figures/                    # Key visualizations (AUC, similarity heatmaps, etc.)
 ├── data/                       # Small toy example for demo (real data fetched separately)
 ├── README.md                   # You are here
