@@ -71,6 +71,40 @@ bash run_pipeline.sh <source_dir> <source_ground_truth.csv> <target_dir> <target
 This script passes the required arguments to (`APT_Terminator_Similarity.py`) and echoes all parameters for verification. It ensures minimal setup and helps users easily reproduce the results reported in the paper. Each argument must be a valid path to the corresponding resource (directories, CSV files, or JSON dictionary).
 
 
+## 🚀 Bash Script Usage Guide
+
+To run the **APT Terminator pipeline** via bash with dictionary-based translation and OT scoring (MiniLM), use the following command structure:
+
+### 📜 Bash Script
+
+```bash
+#!/bin/bash
+
+# Usage:
+# ./bash.sh /path/to/source_dir /path/to/source_gt.csv /path/to/target_dir /path/to/target_gt.csv /path/to/translation_dict.json
+
+source_directory=$1
+source_ground_truth=$2
+target_directory=$3
+target_ground_truth=$4
+dictionary=$5
+
+echo "Running pipeline with:"
+echo "  source_directory: $source_directory"
+echo "  source_ground_truth: $source_ground_truth"
+echo "  target_directory: $target_directory"
+echo "  target_ground_truth: $target_ground_truth"
+echo "  dictionary: $dictionary"
+
+# Launch pipeline
+python3.8 APT_Terminator_Dictionnary_OT_minilm.py \
+  --source_directory "$source_directory" \
+  --source_ground_truth "$source_ground_truth" \
+  --target_directory "$target_directory" \
+  --target_ground_truth "$target_ground_truth" \
+  --dictionary "$dictionary"
+```
+
 ## 🔁 Example: Cross-OS Transfer (Windows → BSD) – Attack Scenario 2
 
 This example demonstrates how to run the APT Terminator pipeline transferring from **Windows** (source OS) to **BSD** (target OS) using **Attack Scenario 2** with the similarity based transfers.
@@ -109,6 +143,8 @@ bash run_pipeline.sh \
   ./data/BSD/cadets_bovia_webshell.csv \
   ./Windows_to_BSD_exec_translation_dict.json
 ```
+
+
 ## LLM embeddings
 The following code example demonstrates how to generate contextualized sentence embeddings using a pre-trained Transformer model from the Hugging Face transformers library. It begins by selecting a model architecture (e.g., BERT, DistilBERT, or MiniLM), then loads the corresponding tokenizer and model weights. Given a sample sentence describing system behavior, the code tokenizes the input, feeds it through the model, and extracts the embedding associated with the [CLS] token — commonly used as a summary representation of the entire sentence in models like BERT. This embedding can be further used in downstream tasks such as semantic similarity, anomaly scoring, or classification.
 
