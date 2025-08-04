@@ -81,7 +81,7 @@ To run the **APT Terminator pipeline** via bash with dictionary-based translatio
 #!/bin/bash
 
 # Usage:
-# ./bash.sh /path/to/source_dir /path/to/source_gt.csv /path/to/target_dir /path/to/target_gt.csv /path/to/translation_dict.json
+# ./run_pipeline.sh /path/to/source_dir /path/to/source_gt.csv /path/to/target_dir /path/to/target_gt.csv /path/to/translation_dict.json
 
 source_directory=$1
 source_ground_truth=$2
