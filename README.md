@@ -71,7 +71,44 @@ bash run_pipeline.sh <source_dir> <source_ground_truth.csv> <target_dir> <target
 This script passes the required arguments to (`APT_Terminator_Similarity.py`) and echoes all parameters for verification. It ensures minimal setup and helps users easily reproduce the results reported in the paper. Each argument must be a valid path to the corresponding resource (directories, CSV files, or JSON dictionary).
 
 
+## 🔁 Example: Cross-OS Transfer (Windows → BSD) – Attack Scenario 2
 
+This example demonstrates how to run the APT Terminator pipeline transferring from **Windows** (source OS) to **BSD** (target OS) using **Attack Scenario 2** with the similarity based transfers.
+
+### 📁 Dataset Paths
+
+- **Source OS**: Windows  
+  - 📂 Local (OpenReview): `./data/Windows`  
+  - 🌐 GitHub: [Windows folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/windows)  
+  - 📄 Ground Truth CSV:  
+    - Local: `./data/Windows/5dir_bovia_simple.csv`  
+    - GitHub: [5dir_bovia_simple.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/windows/5dir_bovia_simple.csv)
+
+- **Target OS**: BSD  
+  - 📂 Local (OpenReview): `./data/BSD`  
+  - 🌐 GitHub: [BSD folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/BSD)  
+  - 📄 Ground Truth CSV:  
+    - Local: `./data/BSD/cadets_bovia_webshell.csv`  
+    - GitHub: [cadets_bovia_webshell.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/BSD/cadets_bovia_webshell.csv)
+
+- **Translation Dictionary (Windows → BSD)**  
+  - 📂 Local: `./Windows_to_BSD_exec_translation_dict.json`  
+  - 🌐 GitHub: [Translation Dictionary](https://github.com/apt-terminator/apt/blob/main/src/Windows_to_BSD_exec_translation_dict.json)
+
+---
+
+### ▶️ Run the Pipeline
+
+Use the following Bash command to launch the pipeline:
+
+```bash
+bash run_pipeline.sh \
+  ./data/Windows \
+  ./data/Windows/5dir_bovia_simple.csv \
+  ./data/BSD \
+  ./data/BSD/cadets_bovia_webshell.csv \
+  ./Windows_to_BSD_exec_translation_dict.json
+```
 ## LLM embeddings
 The following code example demonstrates how to generate contextualized sentence embeddings using a pre-trained Transformer model from the Hugging Face transformers library. It begins by selecting a model architecture (e.g., BERT, DistilBERT, or MiniLM), then loads the corresponding tokenizer and model weights. Given a sample sentence describing system behavior, the code tokenizes the input, feeds it through the model, and extracts the embedding associated with the [CLS] token — commonly used as a summary representation of the entire sentence in models like BERT. This embedding can be further used in downstream tasks such as semantic similarity, anomaly scoring, or classification.
 
