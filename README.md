@@ -97,7 +97,7 @@ echo "  target_ground_truth: $target_ground_truth"
 echo "  dictionary: $dictionary"
 
 # Launch pipeline
-python3.8 APT_Terminator_Similarity.py \
+python3.8 APT_Terminator_Dictionnary_OT_roberta.py \
   --source_directory "$source_directory" \
   --source_ground_truth "$source_ground_truth" \
   --target_directory "$target_directory" \
@@ -105,9 +105,9 @@ python3.8 APT_Terminator_Similarity.py \
   --dictionary "$dictionary"
 ```
 
-### 🔁 Example: Cross-OS Transfer (Android → BSD) – Attack Scenario 2
+### 🔁 Example 1: Optimal Transport-based Cross-OS Transfer (Android → BSD) – Attack Scenario 2
 
-This example demonstrates how to run the **APT Terminator** pipeline for a cross-operating system transfer from **Android (source OS)** to **BSD (target OS)**, using **Attack Scenario 2** and a similarity-based transformation approach.
+This example demonstrates how to run the **APT Terminator** pipeline for a cross-operating system transfer from **Android (source OS)** to **BSD (target OS)**, using **Attack Scenario 2** and an optimal transport-based transformation approach.
 
 ---
 
@@ -117,17 +117,18 @@ Before running the pipeline, you must download the necessary CSV files from the 
 
 - **Source CSV (Android)**
   - Download from: [GitLab – Clearscope Android Trace](https://gitlab.com/adaptdata/e2/-/tree/master/bovia/clearscope)
-  - Save to local folder: `./data/scenario2/android/clearscope_bovia_lobiwapp.csv`
+  - Save to local folder: `./data/scenario2/android/`
 
 - **Target CSV (BSD)**
   - Download from: [GitLab – Cadets BSD Trace](https://gitlab.com/adaptdata/e2/-/tree/master/bovia/cadets)
-  - Save to local folder: `./data/scenario2/BSD/cadets_bovia_webshell.csv`
+  - Save to local folder: `./data/scenario2/BSD/`
 
 ---
 
 #### 📁 Directory Structure
 
 Make sure your root folder contains the following:
+```bash
 project-root/
 ├── APT_Terminator_Similarity.py
 ├── run_pipeline.sh
@@ -138,8 +139,7 @@ project-root/
 │ │ └── clearscope_bovia_lobiwapp.csv
 │ └── BSD/
 │ └── cadets_bovia_webshell.csv
-
-
+```
 ---
 
 #### ▶️ Run the Pipeline
@@ -154,9 +154,10 @@ bash run_pipeline.sh \
   ./data/scenario2/BSD/cadets_bovia_webshell.csv \
   ./Android_to_BSD_exec_translation_dict.json
 ```
-## 🔁 Example: Cross-OS Transfer (Android → BSD) – Attack Scenario 2
+## 🔁 Example 2: Similarity-based Cross-OS Transfer (Android → BSD) – Attack Scenario 2
 
 This example demonstrates how to run the APT Terminator pipeline transferring from **Android** (source OS) to **BSD** (target OS) using **Attack Scenario 2** with the similarity based transfers.
+Make sure to put python3.8 APT_Terminator_Similarity.py in the bash file run_pipeline.sh.
 
 ### 📁 Dataset Paths
 
