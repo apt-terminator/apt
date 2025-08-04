@@ -105,29 +105,29 @@ python3.8 APT_Terminator_Similarity.py \
   --dictionary "$dictionary"
 ```
 
-## 🔁 Example: Cross-OS Transfer (Windows → BSD) – Attack Scenario 2
+## 🔁 Example: Cross-OS Transfer (Android → BSD) – Attack Scenario 2
 
-This example demonstrates how to run the APT Terminator pipeline transferring from **Windows** (source OS) to **BSD** (target OS) using **Attack Scenario 2** with the similarity based transfers.
+This example demonstrates how to run the APT Terminator pipeline transferring from **Android** (source OS) to **BSD** (target OS) using **Attack Scenario 2** with the similarity based transfers.
 
 ### 📁 Dataset Paths
 
-- **Source OS**: Windows  
-  - 📂 Local (OpenReview): `./data/Windows`  
-  - 🌐 GitHub: [Windows folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/windows)  
+- **Source OS**: Android  
+  - 📂 Local: `./data/scenario2/ndroid`  
+  - 🌐 GitHub: [Windows folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/android)  
   - 📄 Ground Truth CSV:  
-    - Local: `./data/Windows/5dir_bovia_simple.csv`  
-    - GitHub: [5dir_bovia_simple.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/windows/5dir_bovia_simple.csv)
+    - Local: `./data/android/clearscope_bovia_lobiwapp.csv`  
+    - GitHub: [clearscope_bovia_lobiwapp.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/android/clearscope_bovia_lobiwapp.csv)
 
 - **Target OS**: BSD  
-  - 📂 Local (OpenReview): `./data/BSD`  
+  - 📂 Local: `./data/scenario2/BSD`  
   - 🌐 GitHub: [BSD folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/BSD)  
   - 📄 Ground Truth CSV:  
-    - Local: `./data/BSD/cadets_bovia_webshell.csv`  
+    - Local: `./data/scenario2/BSD/cadets_bovia_webshell.csv`  
     - GitHub: [cadets_bovia_webshell.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/BSD/cadets_bovia_webshell.csv)
 
-- **Translation Dictionary (Windows → BSD)**  
-  - 📂 Local: `./Windows_to_BSD_exec_translation_dict.json`  
-  - 🌐 GitHub: [Translation Dictionary](https://github.com/apt-terminator/apt/blob/main/src/Windows_to_BSD_exec_translation_dict.json)
+- **Translation Dictionary (Android → BSD)**  
+  - 📂 Local: `./android_to_BSD_exec_translation_dict.json`  
+  - 🌐 GitHub: [Translation Dictionary](https://github.com/apt-terminator/apt/blob/main/src/Android_to_BSD_exec_translation_dict.json)
 
 ---
 
@@ -137,11 +137,11 @@ Use the following Bash command to launch the pipeline:
 
 ```bash
 bash run_pipeline.sh \
-  ./data/Windows \
-  ./data/Windows/5dir_bovia_simple.csv \
+  ./data/scenario2/android \
+  ./data/scenario2/android/clearscope_bovia_lobiwapp.csv \
   ./data/BSD \
   ./data/BSD/cadets_bovia_webshell.csv \
-  ./Windows_to_BSD_exec_translation_dict.json
+  ./Android_to_BSD_exec_translation_dict.json
 ```
 
 
