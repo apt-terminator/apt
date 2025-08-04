@@ -1,0 +1,30 @@
+name: apt-pipeline
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+  - huggingface
+  - anaconda
+dependencies:
+  - python=3.8
+  - pip
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - transformers
+  - sentence-transformers
+  - openai
+  - tiktoken
+  - torch
+  - pytorch-geometric
+  - torchvision
+  - torchaudio
+  - tensorflow
+  - keras
+  - pot  # for Optimal Transport (Python Optimal Transport library)
+  - ipykernel
+  - pip:
+      - kaleido  # optional for exporting plots as images
