@@ -97,7 +97,7 @@ echo "  target_ground_truth: $target_ground_truth"
 echo "  dictionary: $dictionary"
 
 # Launch pipeline
-python3.8 APT_Terminator_Dictionnary_OT_minilm.py \
+python3.8 APT_Terminator_Similarity.py \
   --source_directory "$source_directory" \
   --source_ground_truth "$source_ground_truth" \
   --target_directory "$target_directory" \
