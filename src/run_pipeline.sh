@@ -2,7 +2,6 @@
 
 # Usage:
 # ./run_pipeline.sh ./data/windows ./data/windows/5dir_bovia_simple.csv ./data/BSD ./data/BSD/cadets_bovia_webshell.csv ./data/Windows_to_BSD_exec_translation_dict.json
-
 source_directory=$1
 source_ground_truth=$2
 target_directory=$3
@@ -18,7 +17,7 @@ echo "  target_ground_truth: $target_ground_truth"
 echo "  dictionary: $dictionary"
 
 # Run Python script
-python3.8 APT_Terminator_Similarity.py \
+python3.8 APT_Terminator_Dictionnary_VGAE_minilm.py \
   --source_directory "$source_directory" \
   --source_ground_truth "$source_ground_truth" \
   --target_directory "$target_directory" \
