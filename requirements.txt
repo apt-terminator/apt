@@ -1,25 +1,31 @@
-# Core Libraries
-numpy>=1.21
-pandas>=1.3
-scikit-learn>=1.1
-scipy>=1.7
+# Core libraries
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
 
-# PyTorch and GNNs
-torch>=1.12
-torch_geometric>=2.1
-torch_sparse>=0.6
-torch_scatter>=2.0
+# Transformers and NLP
+transformers
+sentence-transformers
+openai
+tiktoken
 
-# Transformers & LLM Embeddings
-transformers>=4.25
-sentence-transformers>=2.2
+# PyTorch and Graph-based models
+torch
+torchvision
+torchaudio
+torch-geometric
+
+# TensorFlow and Keras
+tensorflow
+keras
 
 # Optimal Transport
-POT>=0.8.2
+pot
 
-# Visualization (Optional but Recommended)
-matplotlib>=3.5
-seaborn>=0.11
+# Visualization
+kaleido  # optional for saving plots as images
 
 # Reproducibility and Progress
 tqdm>=4.62
