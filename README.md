@@ -60,6 +60,18 @@ You can install all dependencies using:
 pip install -r requirements.txt
 ```
 
+## Running the Pipeline via Bash
+To simplify reproducibility, we provide a Bash wrapper script (`run_pipeline.sh`) that automates the execution of the full cross-OS anomaly detection pipeline.
+
+### 🔧 Usage
+
+```bash
+bash run_pipeline.sh <source_dir> <source_ground_truth.csv> <target_dir> <target_ground_truth.csv> <translation_dict.json>
+```
+This script passes the required arguments to (`APT_Terminator_Similarity.py`) and echoes all parameters for verification. It ensures minimal setup and helps users easily reproduce the results reported in the paper. Each argument must be a valid path to the corresponding resource (directories, CSV files, or JSON dictionary).
+
+
+
 ## LLM embeddings
 The following code example demonstrates how to generate contextualized sentence embeddings using a pre-trained Transformer model from the Hugging Face transformers library. It begins by selecting a model architecture (e.g., BERT, DistilBERT, or MiniLM), then loads the corresponding tokenizer and model weights. Given a sample sentence describing system behavior, the code tokenizes the input, feeds it through the model, and extracts the embedding associated with the [CLS] token — commonly used as a summary representation of the entire sentence in models like BERT. This embedding can be further used in downstream tasks such as semantic similarity, anomaly scoring, or classification.
 
