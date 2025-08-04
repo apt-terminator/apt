@@ -112,18 +112,18 @@ This example demonstrates how to run the APT Terminator pipeline transferring fr
 ### 📁 Dataset Paths
 
 - **Source OS**: Android  
-  - 📂 Local: `./data/scenario2/ndroid`  
-  - 🌐 GitHub: [Windows folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/android)  
+  - 📂 Local: `https://github.com/apt-terminator/apt/tree/main/data/scenario2/android`  
+  - 🌐 GitHub: [Android folder](https://gitlab.com/adaptdata/e2/-/tree/master/bovia/clearscope)  
   - 📄 Ground Truth CSV:  
-    - Local: `./data/android/clearscope_bovia_lobiwapp.csv`  
-    - GitHub: [clearscope_bovia_lobiwapp.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/android/clearscope_bovia_lobiwapp.csv)
+    - Local: `https://github.com/apt-terminator/apt/tree/main/data/scenario2/android/clearscope_bovia_lobiwapp.csv`  
+    - GitHub: [clearscope_bovia_lobiwapp.csv](https://gitlab.com/adaptdata/e2/-/tree/master/bovia/clearscope/clearscope_bovia_lobiwapp.csv)
 
 - **Target OS**: BSD  
-  - 📂 Local: `./data/scenario2/BSD`  
-  - 🌐 GitHub: [BSD folder](https://github.com/apt-terminator/apt/tree/main/data/scenario2/BSD)  
+  - 📂 Local: `https://github.com/apt-terminator/apt/tree/main/data/scenario2/BSD`  
+  - 🌐 GitHub: [BSD folder](https://gitlab.com/adaptdata/e2/-/tree/master/bovia/cadets)  
   - 📄 Ground Truth CSV:  
-    - Local: `./data/scenario2/BSD/cadets_bovia_webshell.csv`  
-    - GitHub: [cadets_bovia_webshell.csv](https://github.com/apt-terminator/apt/blob/main/data/scenario2/BSD/cadets_bovia_webshell.csv)
+    - Local: `https://github.com/apt-terminator/apt/tree/main/data/scenario2/BSD/cadets_bovia_webshell.csv`  
+    - GitHub: [cadets_bovia_webshell.csv](https://gitlab.com/adaptdata/e2/-/tree/master/bovia/cadets/cadets_bovia_webshell.csv)
 
 - **Translation Dictionary (Android → BSD)**  
   - 📂 Local: `./android_to_BSD_exec_translation_dict.json`  
