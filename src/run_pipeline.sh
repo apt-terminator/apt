@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage:
-# ./bash.sh /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/5dir /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/5dir/5dir_bovia_simple.csv /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/cadets /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/cadets/cadets_bovia_webshell.csv /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-TERMINATOR/Windows_to_BSD_exec_translation_dict.json
+# ./run_pipeline.sh /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/5dir /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/5dir/5dir_bovia_simple.csv /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/cadets /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT/data/bovia/cadets/cadets_bovia_webshell.csv /Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-TERMINATOR/Windows_to_BSD_exec_translation_dict.json
 
 source_directory=$1
 source_ground_truth=$2
