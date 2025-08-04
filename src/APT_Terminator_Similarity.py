@@ -831,7 +831,7 @@ def main(args):
     bert_auc_score = roc_auc_score(y_true, y_scores)
     ap_score = average_precision_score(y_true, y_scores)
 
-    print(f"AUC: {bert_auc_score:.4f}")
+    print(f"AUC Bert: {bert_auc_score:.4f}")
 
 
 
@@ -865,7 +865,7 @@ def main(args):
     distilbert_auc_score = roc_auc_score(y_true, y_scores)
     ap_score = average_precision_score(y_true, y_scores)
 
-    print(f"AUC: {distilbert_auc_score:.4f}")
+    print(f"AUC Distilbert: {distilbert_auc_score:.4f}")
    
     #### roberta
 
@@ -890,7 +890,7 @@ def main(args):
     roberta_auc_score = roc_auc_score(y_true, y_scores)
     ap_score = average_precision_score(y_true, y_scores)
 
-    print(f"AUC: {roberta_auc_score:.4f}")
+    print(f"AUC Roberta: {roberta_auc_score:.4f}")
    
 
     ###### minilm
@@ -916,7 +916,7 @@ def main(args):
     minilm_auc_score = roc_auc_score(y_true, y_scores)
     ap_score = average_precision_score(y_true, y_scores)
 
-    print(f"AUC: {minilm_auc_score:.4f}")
+    print(f"AUC Minilm: {minilm_auc_score:.4f}")
     
     
 
